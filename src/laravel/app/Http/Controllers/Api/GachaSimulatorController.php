@@ -14,7 +14,7 @@ class GachaSimulatorController extends Controller
      */
     public function index()
     {
-        return "ガチャを回してください";
+        return ["Please gachagacha!"];
     }
 
     /**
@@ -45,7 +45,6 @@ class GachaSimulatorController extends Controller
                 $rCount++;
             }
         }
-        $result = ['SSR' => $ssrCount, 'SR' => $srCount, 'R' => $rCount];
-        return \json_encode($result);
+        return ['SSR' => $ssrCount, 'SR' => $srCount, 'R' => $rCount];
     }
 }

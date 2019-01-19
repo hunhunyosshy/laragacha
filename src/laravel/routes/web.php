@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/gacha/', function () {
+    return view('gacha/request');
+});
+Route::get('/gacha/result/', function () {
+    return view('gacha/response');
+});

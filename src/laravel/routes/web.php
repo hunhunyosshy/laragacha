@@ -17,6 +17,4 @@ Route::get('/', function () {
 Route::get('/gacha/', function () {
     return view('gacha/request');
 });
-Route::get('/gacha/result/', function () {
-    return view('gacha/response');
-});
+Route::post('/gacha/result/', 'Web\GachaResultController@post');

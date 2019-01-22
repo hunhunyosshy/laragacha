@@ -97,7 +97,8 @@
         <link rel="shortcut icon" href="{{ asset('gacha.ico') }}" >
     </head>
     <body>
-        <form>
+        <form method="POST" action="/gacha/result/">
+            {{ csrf_field() }}
             <div class="flex-center position-ref full-height">
                 <div class="content">
                     <div class="title m-b-md">

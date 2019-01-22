@@ -107,7 +107,7 @@
                         ガチャシミュレーション
                     </div>
                     <div class="font-20 m-b-md">
-                        SSR 1回 SR 3回 R 10回
+                        SSR {{ $SSR }} 回 SR {{ $SR }}回 R {{ $R }}回
                     </div>
                     <a href="/gacha/"><button class="square_btn">戻る</button></a>
                 </div>

@@ -20,16 +20,9 @@
                     </div>
                     <div class="font-20 select-box m-b-md">
                             <select name="count">
-                                <option value=1>1</option>
-                                <option value=2>2</option>
-                                <option value=3>3</option>
-                                <option value=4>4</option>
-                                <option value=5>5</option>
-                                <option value=6>6</option>
-                                <option value=7>7</option>
-                                <option value=8>8</option>
-                                <option value=9>9</option>
-                                <option value=10>10</option>
+                                @for ($i = 1; $i <=100; $i++)
+                                <option value={{ $i }}>{{ $i }}</option>
+                                @endfor
                             </select>  &nbsp;&nbsp;回引く
                     </div>
                     <button type='submit' name='action' value='send' class="square_btn">ガチャを引く</button>
